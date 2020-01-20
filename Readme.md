@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Никита Семёнов](https://up.htmlacademy.ru/htmlcss/27/user/333257).
-* Наставник: `Неизвестно`.
+* Наставник: [Лиза Позднякова](https://htmlacademy.ru/profile/lizzy)
 
 ---
 
