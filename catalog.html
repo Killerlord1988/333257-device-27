@@ -10,15 +10,12 @@
   <!--Header-->
   <header>
     <section>
-      <div>
-        <a href="index.html"><img src="https://via.placeholder.com/163x35" alt="Device logo" width="163"
-            height="35"></a>
-      </div>
+      <a href="index.html"><img src="img/svg/logo-device.svg" alt="Device logo" width="163" height="35"></a>
       <div>
         <input type="text" placeholder="Поиск по сайту">
         <div>
-          <a href="#"><span>Валентин Петухов</span></a>
-          <a href="#"><span>Выйти</span></a>
+          <a href="#">Валентин Петухов</a>
+          <a href="#">Выйти</a>
         </div>
         <a href="#">Сравнить</a>
         <a href="#">Корзина</a>
@@ -40,45 +37,48 @@
       <ul>
         <li><a href="index.html">Главная</a></li>
         <li><a href="#">Каталог товаров</a></li>
-        <li>Моноподы для селфи</li>
+        <li><a>Моноподы для селфи</a></li>
       </ul>
     </section>
     <section>
       <!--left-->
       <div>
-        <div>
-          <h3>Фильтр:</h3>
-        </div>
+        <h3>Фильтр:</h3>
         <form action="index.html" method="POST">
-          <span>Стоимость:</span>
-          <!--Drag&drop-->
-          <div>
-            <div>
+          <fieldset>
+            <legend>Стоимость:</legend>
+            <!--Drag&drop-->
               <div>
-                <div></div>
+                <div>
+                  <div></div>
+                </div>
+                <div>min-toggle <span>от 0</span></div>
+                <div>max-toggle <span>до 5000</span></div>
               </div>
-              <div>min-toggle <span>от 0</span></div>
-              <div>max-toggle <span>до 5000</span></div>
-            </div>
+          </fieldset>
+          <div>
+            <fieldset>
+              <legend>Цвет</legend>
+              <ul>
+                <li><label for="black_color"><input type="checkbox" name="black_color" id="black_color" checked>Черный</label></li>
+                <li><label for="white_color"><input type="checkbox" name="white_color" id="white_color">Белый</label></li>
+                <li><label for="blue_color"><input type="checkbox" name="blue_color" id="blue_color">Синий</label></li>
+                <li><label for="red_color"><input type="checkbox" name="red_color" id="red_color">Красный</label></li>
+                <li><label for="pink_color"><input type="checkbox" name="pink_color" id="pink_color">Розовый</label></li>
+              </ul>
+            </fieldset>
           </div>
           <div>
-            <span>Цвет</span>
-            <ul>
-              <li><label><input type="checkbox" name="black_color" checked><span></span>Черный</label></li>
-              <li><label><input type="checkbox" name="white_color"><span></span>Белый</label></li>
-              <li><label><input type="checkbox" name="blue_color"><span></span>Синий</label></li>
-              <li><label><input type="checkbox" name="red_color"><span></span>Красный</label></li>
-              <li><label><input type="checkbox" name="pink_color"><span></span>Розовый</label></li>
-            </ul>
+            <fieldset>
+              <legend>Bluetooth</legend>
+              <ul>
+                <li><label for="bluetooth_check1"><input type="radio" name="bluetooth_check" id="bluetooth_check1" checked>Есть</label></li>
+                <li><label for="bluetooth_check2"><input type="radio" name="bluetooth_check" id="bluetooth_check2">Нет</label>
+                </li>
+              </ul>
+            </fieldset>
           </div>
-          <div>
-            <span>Bluetooth</span>
-            <ul>
-              <li><label><input type="radio" name="Bluetooth_check" checked><span></span>Есть</label></li>
-              <li><label><input type="radio" name="Bluetooth_check"><span></span>Нет</label></li>
-            </ul>
-          </div>
-          <button>Показать</button>
+          <button type="submit">Показать</button>
         </form>
       </div>
       <!--right-->
@@ -92,62 +92,63 @@
             <li><a href="#">По популярности</a></li>
           </ul>
           <div>
-            <div>up</div>
-            <div>down</div>
+            <button type="submit">up</button>
+            <button type="submit">down</button>
           </div>
         </div>
-        <div>
-          <img src="https://via.placeholder.com/360x380" alt="product" width="360" height="380">
+        <article>
+          <img src="img/item-1-jpg.jpg" alt="product" width="360" height="380">
           <div>
             <a href="#"><span>Любительская селфи-палка</span></a>
             <a href="#"><span>500 руб</span></a>
           </div>
-        </div>
-        <div>
-          <img src="https://via.placeholder.com/360x380" alt="product" width="360" height="380">
+        </article>
+        <article>
+          <img src="img/item-2-jpg.jpg" alt="product" width="360" height="380">
           <div>
             <a href="#"><span>Профессиональная селфи-палка</span></a>
             <a href="#"><span>1500 руб</span></a>
           </div>
-        </div>
-        <div>
-          <img src="https://via.placeholder.com/360x380" alt="product" width="360" height="380">
+        </article>
+        <article>
+          <img src="img/item-3-jpg.jpg" alt="product" width="360" height="380">
           <div>
             <a href="#"><span>Непотопляемая селфи-палка</span></a>
             <a href="#"><span>2500 руб</span></a>
           </div>
-        </div>
-        <div>
-          <img src="https://via.placeholder.com/360x380" alt="product" width="360" height="380">
+        </article>
+        <article>
+          <img src="img/item-4-jpg.jpg" alt="product" width="360" height="380">
           <div>
             <a href="#"><span>Селфи-палка «Следуй за мной»</span></a>
             <a href="#"><span>4900 руб</span></a>
           </div>
-        </div>
+        </article>
 
         <section class="paginator">
           <div class="paginator-position">
-            <a href="#">назад</a>
-            <a href="#">1</a>
-            <a href="#">2</a>
-            <a href="#">3</a>
-            <a href="#">вперед</a>
+            <ul>
+              <li><a href="#">назад</a></li>
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">вперед</a></li>
+            </ul>
           </div>
       </div>
     </section>
     </section>
-
   </main>
   <!--Footer-->
   <footer>
     <div>
-      <a href=""><img src="https://via.placeholder.com/163x35" alt="Device logo" width="163" height="35"></a>
+      <a href="index.html"><img src="img/svg/logo-device.svg" alt="Device logo" width="163" height="35"></a>
       <p>г. Москва, ул. Строителей, 15</p>
     </div>
     <div>
       <div>
-        <a href="#"><span>Валентин Петухов</span></a>
-        <a href="#"><span>Выйти</span></a>
+        <a href="#">Валентин Петухов</a>
+        <a href="#">Выйти</a>
       </div>
       <a href="#">Сравнить</a>
       <a href="#">Корзина</a>
@@ -160,16 +161,17 @@
       </ul>
     </div>
     <div>
-      <a href="#">Фейсбук</a>
-      <a href="#">Инстаграм</a>
-      <a href="#">Твиттер</a>
+      <ul>
+        <li><a href="#">Фейсбук<img src="img/svg/fb.svg" alt="Фейсбук"></a></li>
+        <li><a href="#">Инстаграм<img src="img/svg/instagram.svg" alt="Инстаграм"></a></li>
+        <li><a href="#">Твиттер<img src="img/svg/twitter.svg" alt="Твиттер"></a></li>
+      </ul>
     </div>
     <div>
       <a href="tel:+7(495)495-95-95">Тел.: +7 (495) 495-95-95</a>
-      <a href="https://htmlacademy.ru/" target="_blank"><img src="https://via.placeholder.com/27x35" alt="Html logo"
-          width="27" height="35"></a>
+      <a href="https://htmlacademy.ru/" target="_blank"><img src="img/svg/logo-html.svg" alt="Html logo" width="27"
+          height="35"></a>
     </div>
   </footer>
 </body>
-
 </html>
