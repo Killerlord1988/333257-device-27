@@ -9,26 +9,24 @@
 <body>
   <!--Header-->
   <header>
-    <section>
-      <a href="index.html"><img src="img/svg/logo-device.svg" alt="Device logo" width="163" height="35"></a>
+    <a href="index.html"><img src="img/svg/logo-device.svg" alt="Логотип Дивайс" width="163" height="35"></a>
+    <div>
+      <input type="text" placeholder="Поиск по сайту">
       <div>
-        <input type="text" placeholder="Поиск по сайту">
-        <div>
-          <a href="#">Валентин Петухов</a>
-          <a href="#">Выйти</a>
-        </div>
-        <a href="#">Сравнить</a>
-        <a href="#">Корзина</a>
+        <a href="#">Валентин Петухов</a>
+        <a href="#">Выйти</a>
       </div>
-      <nav>
-        <ul>
-          <li><a href="#">Каталог товаров</a></li>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Гарантия</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-      </nav>
-    </section>
+      <a href="#">Сравнить</a>
+      <a href="#">Корзина</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Каталог товаров</a></li>
+        <li><a href="#">Доставка</a></li>
+        <li><a href="#">Гарантия</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </nav>
   </header>
   <!--Main-->
   <main>
@@ -42,29 +40,32 @@
     </section>
     <section>
       <!--left-->
-      <div>
+      <aside>
         <h3>Фильтр:</h3>
         <form action="index.html" method="POST">
           <fieldset>
             <legend>Стоимость:</legend>
             <!--Drag&drop-->
+            <div>
               <div>
-                <div>
-                  <div></div>
-                </div>
-                <div>min-toggle <span>от 0</span></div>
-                <div>max-toggle <span>до 5000</span></div>
+                <div></div>
               </div>
+              <div>min-toggle <span>от 0</span></div>
+              <div>max-toggle <span>до 5000</span></div>
+            </div>
           </fieldset>
           <div>
             <fieldset>
               <legend>Цвет</legend>
               <ul>
-                <li><label for="black_color"><input type="checkbox" name="black_color" id="black_color" checked>Черный</label></li>
-                <li><label for="white_color"><input type="checkbox" name="white_color" id="white_color">Белый</label></li>
+                <li><label for="black_color"><input type="checkbox" name="black_color" id="black_color"
+                      checked>Черный</label></li>
+                <li><label for="white_color"><input type="checkbox" name="white_color" id="white_color">Белый</label>
+                </li>
                 <li><label for="blue_color"><input type="checkbox" name="blue_color" id="blue_color">Синий</label></li>
                 <li><label for="red_color"><input type="checkbox" name="red_color" id="red_color">Красный</label></li>
-                <li><label for="pink_color"><input type="checkbox" name="pink_color" id="pink_color">Розовый</label></li>
+                <li><label for="pink_color"><input type="checkbox" name="pink_color" id="pink_color">Розовый</label>
+                </li>
               </ul>
             </fieldset>
           </div>
@@ -72,15 +73,17 @@
             <fieldset>
               <legend>Bluetooth</legend>
               <ul>
-                <li><label for="bluetooth_check1"><input type="radio" name="bluetooth_check" id="bluetooth_check1" checked>Есть</label></li>
-                <li><label for="bluetooth_check2"><input type="radio" name="bluetooth_check" id="bluetooth_check2">Нет</label>
+                <li><label for="bluetooth_yes"><input type="radio" name="bluetooth_check" id="bluetooth_yes"
+                      checked>Есть</label></li>
+                <li><label for="bluetooth_no"><input type="radio" name="bluetooth_check"
+                      id="bluetooth_no">Нет</label>
                 </li>
               </ul>
             </fieldset>
           </div>
-          <button type="submit">Показать</button>
+          <button type="button">Показать</button>
         </form>
-      </div>
+      </aside>
       <!--right-->
       <div>
         <!--Sorting-->
@@ -92,33 +95,33 @@
             <li><a href="#">По популярности</a></li>
           </ul>
           <div>
-            <button type="submit">up</button>
-            <button type="submit">down</button>
+            <button type="button">up</button>
+            <button type="button">down</button>
           </div>
         </div>
         <article>
-          <img src="img/item-1-jpg.jpg" alt="product" width="360" height="380">
+          <img src="img/item-1-selfie-stick.jpg" alt="Изображение Любительская селфи-палка" width="360" height="380">
           <div>
             <a href="#"><span>Любительская селфи-палка</span></a>
             <a href="#"><span>500 руб</span></a>
           </div>
         </article>
         <article>
-          <img src="img/item-2-jpg.jpg" alt="product" width="360" height="380">
+          <img src="img/item-2-selfie-pro.jpg" alt="Изображение Профессиональная селфи-палка" width="360" height="380">
           <div>
             <a href="#"><span>Профессиональная селфи-палка</span></a>
             <a href="#"><span>1500 руб</span></a>
           </div>
         </article>
         <article>
-          <img src="img/item-3-jpg.jpg" alt="product" width="360" height="380">
+          <img src="img/item-3-selfie-underwater.jpg" alt="Изображение Непотопляемая селфи-палка" width="360" height="380">
           <div>
             <a href="#"><span>Непотопляемая селфи-палка</span></a>
             <a href="#"><span>2500 руб</span></a>
           </div>
         </article>
         <article>
-          <img src="img/item-4-jpg.jpg" alt="product" width="360" height="380">
+          <img src="img/item-4-selfie-comewithme.jpg" alt="Изображение селфи-палка «Следуй за мной»" width="360" height="380">
           <div>
             <a href="#"><span>Селфи-палка «Следуй за мной»</span></a>
             <a href="#"><span>4900 руб</span></a>
@@ -126,23 +129,21 @@
         </article>
 
         <section class="paginator">
-          <div class="paginator-position">
-            <ul>
-              <li><a href="#">назад</a></li>
-              <li><a href="#">1</a></li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-              <li><a href="#">вперед</a></li>
-            </ul>
-          </div>
+          <ul>
+            <li><a href="#">назад</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">вперед</a></li>
+          </ul>
+        </section>
       </div>
-    </section>
     </section>
   </main>
   <!--Footer-->
   <footer>
     <div>
-      <a href="index.html"><img src="img/svg/logo-device.svg" alt="Device logo" width="163" height="35"></a>
+      <a href="index.html"><img src="img/svg/logo-device.svg" alt="Логотип Дивайс" width="163" height="35"></a>
       <p>г. Москва, ул. Строителей, 15</p>
     </div>
     <div>
@@ -169,7 +170,7 @@
     </div>
     <div>
       <a href="tel:+7(495)495-95-95">Тел.: +7 (495) 495-95-95</a>
-      <a href="https://htmlacademy.ru/" target="_blank"><img src="img/svg/logo-html.svg" alt="Html logo" width="27"
+      <a href="https://htmlacademy.ru/" target="_blank"><img src="img/svg/logo-html.svg" alt="логотип Html Academy" width="27"
           height="35"></a>
     </div>
   </footer>
