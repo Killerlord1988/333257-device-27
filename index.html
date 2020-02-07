@@ -11,8 +11,8 @@
   <header>
     <a><img src="img/svg/logo-device.svg" alt="Логотип Дивайс" width="163" height="35"></a>
     <div>
-      <input type="text" placeholder="Поиск по сайту">
-      <a href="#">Войти</a>
+      <input type="text" placeholder="Поиск по сайту" aria-label="Поиск по сайту">
+      <a href="#" aria-label="Войти">Войти</a>
       <a href="#">Сравнить</a>
       <a href="#">Корзина</a>
     </div>
@@ -23,12 +23,23 @@
         <li><a href="#">Гарантия</a></li>
         <li><a href="#">Контакты</a></li>
       </ul>
+      <!--Menu back-->
+      <ul class="menu-back visually-hidden">
+        <li><a href="#">Виртуальная реальность</a></li>
+        <li><a href="#">Моноподы для селфи</a></li>
+        <li><a href="#">Экшн-камеры</a></li>
+        <li><a href="#">Фитнес-браслеты</a></li>
+        <li><a href="#">Умные часы</a></li>
+        <li><a href="#">Квадрокоптеры</a></li>
+      </ul>
     </nav>
   </header>
   <!--Main-->
   <main>
+    <h1 class="visually-hidden">Интернет-магазин гаджетов. Главная</h1>
     <!--Slider-->
     <section>
+      <h2 class="visually-hidden">Слайдер Интернет-магазина гаджетов</h2>
       <!--Slide1-->
       <div>
         <img src="img/slider-1-longSelfie-stick.png" alt="Самая длинная палка для селфи" width="384" height="486">
@@ -90,6 +101,7 @@
     </section>
     <!--Сategories-->
     <section>
+      <h2 class="visually-hidden">Категории Интернет-магазина гаджетов</h2>
       <ul>
         <li><a href="#">
 
@@ -130,6 +142,7 @@
     </section>
     <!--Device Services-->
     <section>
+      <h2 class="visually-hidden">Услуги доставки, гарании и возможность кредита в Интернет-магазине гаджетов</h2>
       <ul>
         <li><a href="#">Доставка</a></li>
         <li><a href="#">Гарантия</a></li>
@@ -159,6 +172,7 @@
     </section>
     <!--Device Logos-->
     <section>
+      <h2 class="visually-hidden">Партнеры интернет Интернет-магазина Device</h2>
       <ul>
         <li><a href="#"><img src="img/logo-djl.jpg" alt="партнер djl" width="260" height="100"></a></li>
         <li><a href="#"><img src="img/logo-spGadgets.jpg" alt="партнер sp Gadgets" width="260" height="100"></a></li>
@@ -216,10 +230,28 @@
     </div>
     <div>
       <a href="tel:+7(495)495-95-95">Тел.: +7 (495) 495-95-95</a>
-      <a href="https://htmlacademy.ru/" target="_blank"><img src="img/svg/logo-html.svg" alt="логотип Html Academy" width="27"
-          height="35"></a>
+      <a href="https://htmlacademy.ru/" target="_blank"><img src="img/svg/logo-html.svg" alt="логотип Html Academy"
+          width="27" height="35"></a>
     </div>
   </footer>
+  <!--Modal content -->
+  <section class="modal-content">
+    <button class="modal-content-close" type="button" name="button" title="Закрыть">Закрыть</button>
+    <form class="write-us-form" action="index.html" method="post">
+      <div class="name-area"><label for="your-name">Ваше имя:<input type="text" id="your-name" name="name"
+            placeholder="имя фамилия" aria-label="Введите ваше имя" required></label></div>
+      <div class="email-area"><label for="your-email">Ваш e-mail:<input id="your-email" type="email" name="email"
+            placeholder="email@example.com" aria-label="Введите ваш e-mail" required></label></div>
+      <div class="letter-area"><label for="your-latter">Текст письма:<textarea id="your-latter" name="letter" rows="8"
+            cols="80" placeholder="в свободной форме" aria-label="Напишите нам" required></textarea></label></div>
+      <button type="submit" name="button">Отправить</button>
+    </form>
+  </section>
+  <!--Modal map -->
+  <section class="modal-map">
+    <button class="modal-map-close" type="button" name="button" title="Закрыть">Закрыть</button>
+    <img src="img/map-big.jpg" alt="Мы находимся по адресу ул. Строителей 15">
+  </section>
 </body>
 
 </html>
