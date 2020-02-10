@@ -11,7 +11,10 @@
   <header>
     <a href="index.html"><img src="img/svg/logo-device.svg" alt="Логотип Дивайс" width="163" height="35"></a>
     <div>
-      <input type="text" placeholder="Поиск по сайту" aria-label="Поиск по сайту">
+      <form action="https://echo.htmlacademy.ru" method="POST">
+        <input type="search" name="search" placeholder="Поиск по сайту">
+        <button type="submit">Найти</button>
+      </form>
       <div>
         <a href="#">Валентин Петухов</a>
         <a href="#">Выйти</a>
@@ -53,7 +56,7 @@
       <!--left-->
       <aside>
         <h3>Фильтр:</h3>
-        <form action="index.html" method="POST">
+        <form action="https://echo.htmlacademy.ru" method="POST">
           <fieldset>
             <legend>Стоимость:</legend>
             <!--Drag&drop-->
@@ -70,16 +73,12 @@
               <legend>Цвет</legend>
               <ul>
                 <li><label for="black_color"><input type="checkbox" name="black_color" id="black_color"
-                      aria-label="Черный" checked>Черный</label></li>
-                <li><label for="white_color"><input type="checkbox" name="white_color" id="white_color"
-                      aria-label="Белый>">Белый</label>
+                      checked>Черный</label></li>
+                <li><label for="white_color"><input type="checkbox" name="white_color" id="white_color">Белый</label>
                 </li>
-                <li><label for="blue_color"><input type="checkbox" name="blue_color" id="blue_color"
-                      aria-label="Синий">Синий</label></li>
-                <li><label for="red_color"><input type="checkbox" name="red_color" id="red_color"
-                      aria-label="Красный">Красный</label></li>
-                <li><label for="pink_color"><input type="checkbox" name="pink_color" id="pink_color"
-                      aria-label="Розовый">Розовый</label>
+                <li><label for="blue_color"><input type="checkbox" name="blue_color" id="blue_color">Синий</label></li>
+                <li><label for="red_color"><input type="checkbox" name="red_color" id="red_color">Красный</label></li>
+                <li><label for="pink_color"><input type="checkbox" name="pink_color" id="pink_color">Розовый</label>
                 </li>
               </ul>
             </fieldset>
@@ -89,9 +88,8 @@
               <legend>Bluetooth</legend>
               <ul>
                 <li><label for="bluetooth_yes"><input type="radio" name="bluetooth_check" id="bluetooth_yes"
-                      aria-label="С bluetooth" checked>Есть</label></li>
-                <li><label for="bluetooth_no"><input type="radio" name="bluetooth_check" id="bluetooth_no"
-                      aria-label="Без bluetooth">Нет</label>
+                      checked>Есть</label></li>
+                <li><label for="bluetooth_no"><input type="radio" name="bluetooth_check" id="bluetooth_no">Нет</label>
                 </li>
               </ul>
             </fieldset>
@@ -117,8 +115,8 @@
         <article>
           <img src="img/item-1-selfie-stick.jpg" alt="Изображение Любительская селфи-палка" width="360" height="380">
           <div>
-            <a href="#"><span>Любительская селфи-палка</span></a>
-            <a href="#"><span>500 руб</span></a>
+            <a href="#">Любительская селфи-палка</a>
+            <a href="#">500 руб</a>
           </div>
           <div class="hover-block">
             <button type="button">В корзину</button>
@@ -128,8 +126,8 @@
         <article>
           <img src="img/item-2-selfie-pro.jpg" alt="Изображение Профессиональная селфи-палка" width="360" height="380">
           <div>
-            <a href="#"><span>Профессиональная селфи-палка</span></a>
-            <a href="#"><span>1500 руб</span></a>
+            <a href="#">Профессиональная селфи-палка</a>
+            <a href="#">1500 руб</a>
           </div>
           <div class="hover-block">
             <button type="button">В корзину</button>
@@ -140,8 +138,8 @@
           <img src="img/item-3-selfie-underwater.jpg" alt="Изображение Непотопляемая селфи-палка" width="360"
             height="380">
           <div>
-            <a href="#"><span>Непотопляемая селфи-палка</span></a>
-            <a href="#"><span>2500 руб</span></a>
+            <a href="#">Непотопляемая селфи-палка</a>
+            <a href="#">2500 руб</a>
           </div>
           <div class="hover-block">
             <button type="button">В корзину</button>
@@ -152,8 +150,8 @@
           <img src="img/item-4-selfie-comewithme.jpg" alt="Изображение селфи-палка «Следуй за мной»" width="360"
             height="380">
           <div>
-            <a href="#"><span>Селфи-палка «Следуй за мной»</span></a>
-            <a href="#"><span>4900 руб</span></a>
+            <a href="#">Селфи-палка «Следуй за мной»</a>
+            <a href="#">4900 руб</a>
           </div>
           <div class="hover-block">
             <button type="button">В корзину</button>

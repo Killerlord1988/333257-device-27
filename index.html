@@ -11,8 +11,11 @@
   <header>
     <a><img src="img/svg/logo-device.svg" alt="Логотип Дивайс" width="163" height="35"></a>
     <div>
-      <input type="text" placeholder="Поиск по сайту" aria-label="Поиск по сайту">
-      <a href="#" aria-label="Войти">Войти</a>
+<form action="https://echo.htmlacademy.ru" method="POST">
+      <input type="search" name="search" placeholder="Поиск по сайту">
+    <button type="submit">Найти</button>
+    </form>
+      <a href="#">Войти</a>
       <a href="#">Сравнить</a>
       <a href="#">Корзина</a>
     </div>
@@ -236,8 +239,8 @@
   </footer>
   <!--Modal content -->
   <section class="modal-content">
-    <button class="modal-content-close" type="button" name="button" title="Закрыть">Закрыть</button>
-    <form class="write-us-form" action="index.html" method="post">
+    <button class="modal-content-close" type="button" name="button">Закрыть</button>
+    <form class="write-us-form" action="https://echo.htmlacademy.ru" method="POST">
       <div class="name-area"><label for="your-name">Ваше имя:<input type="text" id="your-name" name="name"
             placeholder="имя фамилия" aria-label="Введите ваше имя" required></label></div>
       <div class="email-area"><label for="your-email">Ваш e-mail:<input id="your-email" type="email" name="email"
@@ -249,7 +252,7 @@
   </section>
   <!--Modal map -->
   <section class="modal-map">
-    <button class="modal-map-close" type="button" name="button" title="Закрыть">Закрыть</button>
+    <button class="modal-map-close" type="button" name="button">Закрыть</button>
     <img src="img/map-big.jpg" alt="Мы находимся по адресу ул. Строителей 15">
   </section>
 </body>
