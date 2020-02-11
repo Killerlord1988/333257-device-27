@@ -1,0 +1,72 @@
+/* connect fonts */
+@font-face {
+  font-family: Gilroy;
+  src: url('../fonts/gilroylight.woff2') format('woff2'),
+    url('../fonts/gilroylight.woff') format('woff');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Gilroy;
+
+  src: url('../fonts/gilroyextrabold.woff2') format('woff2'),
+    url('../fonts/gilroyextrabold.woff') format('woff');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: opensans;
+
+  src: url('../fonts/opensans.woff2') format('woff2'),
+    url('../fonts/opensans.woff') format('woff');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: opensans;
+
+  src: url('../fonts/opensanslight.woff2') format('woff2'),
+    url('../fonts/opensanslight.woff') format('woff');
+  font-weight: 300;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 1180px;
+  margin: 0;
+  padding: 0;
+
+  font-family: "opensans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  color: #000000;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
