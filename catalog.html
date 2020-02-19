@@ -4,12 +4,13 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Девайс</title>
 </head>
 
 <body>
   <!--Header-->
-  <header>
+  <header class="main-header container">
     <a href="index.html"><img src="img/svg/logo-device.svg" alt="Логотип Дивайс" width="163" height="35"></a>
     <div>
       <form action="https://echo.htmlacademy.ru" method="POST">
@@ -58,44 +59,44 @@
       <aside>
         <h3>Фильтр:</h3>
         <form action="https://echo.htmlacademy.ru" method="POST">
+          <!--Drag&drop-->
           <fieldset>
             <legend>Стоимость:</legend>
-            <!--Drag&drop-->
-            <div>
-              <div>
-                <div></div>
+            <div class="range">
+              <div class="range-change"></div>
+              <div class="toggle min-toggle"><label for="number-min">от 0<input type="number" name="number-min"></label>
               </div>
-              <div>min-toggle <span>от 0</span></div>
-              <div>max-toggle <span>до 5000</span></div>
+              <div class="toggle man-toggle"><label for="number-max">до 5000<input type="number"
+                    name="number-max"></label></div>
             </div>
           </fieldset>
-          <div>
-            <fieldset>
-              <legend>Цвет</legend>
-              <ul>
-                <li><label for="black_color"><input type="checkbox" name="black_color" id="black_color"
-                      checked>Черный</label></li>
-                <li><label for="white_color"><input type="checkbox" name="white_color" id="white_color">Белый</label>
-                </li>
-                <li><label for="blue_color"><input type="checkbox" name="blue_color" id="blue_color">Синий</label></li>
-                <li><label for="red_color"><input type="checkbox" name="red_color" id="red_color">Красный</label></li>
-                <li><label for="pink_color"><input type="checkbox" name="pink_color" id="pink_color">Розовый</label>
-                </li>
-              </ul>
-            </fieldset>
-          </div>
-          <div>
-            <fieldset>
-              <legend>Bluetooth</legend>
-              <ul>
-                <li><label for="bluetooth_yes"><input type="radio" name="bluetooth_check" id="bluetooth_yes"
-                      checked>Есть</label></li>
-                <li><label for="bluetooth_no"><input type="radio" name="bluetooth_check" id="bluetooth_no">Нет</label>
-                </li>
-              </ul>
-            </fieldset>
-          </div>
-          <button type="button">Показать</button>
+
+          <fieldset>
+            <legend>Цвет</legend>
+            <ul>
+              <li><label for="black_color"><input type="checkbox" name="black_color" id="black_color"
+                    checked>Черный</label></li>
+              <li><label for="white_color"><input type="checkbox" name="white_color" id="white_color">Белый</label>
+              </li>
+              <li><label for="blue_color"><input type="checkbox" name="blue_color" id="blue_color">Синий</label></li>
+              <li><label for="red_color"><input type="checkbox" name="red_color" id="red_color">Красный</label></li>
+              <li><label for="pink_color"><input type="checkbox" name="pink_color" id="pink_color">Розовый</label>
+              </li>
+            </ul>
+          </fieldset>
+
+
+          <fieldset>
+            <legend>Bluetooth</legend>
+            <ul>
+              <li><label for="bluetooth_yes"><input type="radio" name="bluetooth_check" id="bluetooth_yes"
+                    checked>Есть</label></li>
+              <li><label for="bluetooth_no"><input type="radio" name="bluetooth_check" id="bluetooth_no">Нет</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <button type="submit">Показать</button>
         </form>
       </aside>
       <!--right-->
@@ -109,8 +110,8 @@
             <li><a href="#">По популярности</a></li>
           </ul>
           <div>
-            <button type="button">up</button>
-            <button type="button">down</button>
+            <button type="button"><span class="visually-hidden">Сортировать по цене вверх</span></button>
+            <button type="button"><span class="visually-hidden">Сортировать по цене вниз</span></button>
           </div>
         </div>
         <article>
@@ -196,9 +197,9 @@
     </div>
     <div>
       <ul>
-        <li><a href="#">Фейсбук<img src="img/svg/fb.svg" alt="Фейсбук"></a></li>
-        <li><a href="#">Инстаграм<img src="img/svg/instagram.svg" alt="Инстаграм"></a></li>
-        <li><a href="#">Твиттер<img src="img/svg/twitter.svg" alt="Твиттер"></a></li>
+        <li><a href="#"><span class="visually-hidden">Фейсбук</span><img src="img/svg/fb.svg"></a></li>
+        <li><a href="#"><span class="visually-hidden">Инстаграм</span><img src="img/svg/instagram.svg"></a></li>
+        <li><a href="#"><span class="visually-hidden">Твиттер</span><img src="img/svg/twitter.svg"></a></li>
       </ul>
     </div>
     <div>
@@ -208,5 +209,4 @@
     </div>
   </footer>
 </body>
-
 </html>
