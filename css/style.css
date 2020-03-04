@@ -1521,13 +1521,6 @@ border: none;
   opacity: 0.15
 }
 
-
-
-
-.to-cart-btn {
-
-}
-
 .to-cart-btn::after {
   content: "";
   position: absolute;
