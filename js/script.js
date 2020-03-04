@@ -83,3 +83,6 @@ window.addEventListener("keydown", function(evt) {
         } 
     }
 });
+
+/*slider*/
+

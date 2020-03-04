@@ -1467,8 +1467,6 @@ border: none;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-left: 73px;
-
-  margin-bottom: 40px;
 }
 
 .item-card {
@@ -1554,6 +1552,8 @@ border: none;
 .item-name-price {
   display: flex;
   justify-content: space-between;
+  margin-top: 37px;
+  margin-bottom: 50px;
 }
 
 .item-name {
