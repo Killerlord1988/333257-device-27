@@ -1530,6 +1530,7 @@ left: 0;
 }
 
 .sorting-types a {
+  color: #000000;
   font-size: 14px;
   line-height: 18px;
   opacity: 0.3;
@@ -1553,7 +1554,7 @@ left: 0;
 }
 
 .sorting-order-btn {
-  cursor: pointer;
+cursor: pointer;
 width: 12px;
 height: 12px;
 border: none;
