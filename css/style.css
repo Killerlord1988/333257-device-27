@@ -412,7 +412,7 @@ a {
   content: "";
   position: absolute;
   top: calc(50% - 4px);
-  left: calc(50% - 108.5px);
+  left: calc(50% - 104px);
 
 
   width: 100%;
