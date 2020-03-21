@@ -64,9 +64,9 @@
     <section class="selected-item container">
       <h1 class="page-title">Моноподы для селфи</h1>
       <ul class="breadcrumbs">
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="#">Каталог товаров</a></li>
-        <li><a>Моноподы для селфи</a></li>
+        <li><a class="breadcumbs-link" href="index.html">Главная</a></li>
+        <li><a class="breadcumbs-link" href="#">Каталог товаров</a></li>
+        <li><a class="breadcumbs-no-active">Моноподы для селфи</a></li>
       </ul>
     </section>
     <section class="filter-gallery">
@@ -82,12 +82,16 @@
             <fieldset class="cost-range">
               <h4>Стоимость</h4>
               <div class="range">
-                <div class="range-change"></div>
-                <div class="toggle min-toggle"><label for="number-min"><input type="number" name="number-min"
-                      placeholder="от 0" min="0" max="4999"></label>
+                <div class="range-change">
+                  <label class="number-min" for="number-min"><input type="number" name="number-min" id="number-min"
+                    placeholder="от 0" min="0" max="4999"></label>
+                  <label class="number-max" for="number-max"><input type="number" name="number-max" id="number-max"
+                    placeholder="до 5000" max="5000"></label>
                 </div>
-                <div class="toggle max-toggle"><label for="number-max"><input type="number" name="number-max"
-                      placeholder="до 5000" max="5000"></label></div>
+                <div class="toggle min-toggle"></div>
+               
+                <div class="toggle max-toggle"></div>
+                
               </div>
             </fieldset>
 
@@ -103,11 +107,11 @@
                   <label for="white_color">Белый</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="blue_color" id="blue_color">
+                  <input type="checkbox" name="blue_color" id="blue_color" checked>
                   <label for="blue_color">Синий</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="red_color" id="red_color">
+                  <input type="checkbox" name="red_color" id="red_color" checked>
                   <label for="red_color">Красный</label>
                 </li>
                 <li>
@@ -209,11 +213,13 @@
           <h2 class="visually-hidden">Навигация по каталогу</h2>
           <ul class="paginator-list">
             <li class="paginator-button"><a class="active" href="#">назад</a></li>
-            <div class="paginator-number">
+            <li>
+            <ul class="paginator-number">
             <li><a class="active" href="#">1</a></li>
             <li><a href="#">2</a></li>
             <li><a href="#">3</a></li>
-          </div>
+            </ul>
+          </li>
             <li class="paginator-button"><a class="active" href="#">вперед</a></li>
           </ul>
         </section>
@@ -236,7 +242,7 @@
               viewBox="0 0 13 12">
               <path fill="#ffc600"
                 d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z" />
-            </svg>Валентин Петухов</a><a href="#" class="logout">Выйти</a></a>
+            </svg>Валентин Петухов</a><a href="#" class="logout">Выйти</a>
           <a class="compare-footer compare-icon" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"
               viewBox="0 0 10 10">
               <path fill="#ffc600" d="M8 2h1.984v8H8zM0 3h1.984v7H0zM4 0h2v10H4z" /></svg>Сравнить</a>
@@ -269,8 +275,8 @@
           <li><a href="#"><span class="visually-hidden">Твиттер</span><img src="img/svg/twitter.svg" alt="Твиттер"></a>
           </li>
         </ul>
-        <a class="htmlacademy-logo" href="https://htmlacademy.ru/" target="_blank"><img src="img/svg/logo-html.svg"
-            alt="логотип Html Academy" width="27" height="35"></a>
+        <div class="htmlacademy-logo"><a href="https://htmlacademy.ru/" target="_blank"><img src="img/svg/logo-html.svg"
+          alt="логотип Html Academy" width="27" height="35"></a></div>
       </div>
     </div>
   </footer>

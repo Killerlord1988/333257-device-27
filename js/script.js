@@ -84,7 +84,7 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 
-// /*slider*/
+/*slider*/
 
 // var slideIndex = 0;
 // var dotIndex = 0;
