@@ -5,8 +5,9 @@ var popup = document.querySelector(".modal-content");
 var close = popup.querySelector(".modal-content-close");
 
 var form = popup.querySelector("form");
-var name = popup.querySelector("[name=name]");
+var names = popup.querySelector("[name=name]");
 var email = popup.querySelector("[name=email]");
+
 
 var isStorageSupport = true;
 var storage = "";
@@ -21,11 +22,12 @@ link.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.add("modal-show");
 
+
   if (storage) {
-    name.value = storage;
+    names.value = storage;
     email.focus();
   } else {
-    name.focus();
+    names.focus();
   }
 });
 
@@ -35,9 +37,8 @@ close.addEventListener("click", function (evt) {
   popup.classList.remove("modal-error");
 });
 
-form.addEventListener("submit", function (evt) {
+form.addEventListener("submit", function () {
   if (!name.value || !email.value) {
-    evt.preventDefault();
     popup.classList.remove("modal-error");
     popup.offsetWidth = popup.offsetWidth;
     popup.classList.add("modal-error");
@@ -151,8 +152,8 @@ const dots = document.querySelectorAll(".slider-control");
 
 let currentIndex = 0;
 
-function changeSlide () {
-  if (currentIndex === slides.length ) {
+function changeSlide() {
+  if (currentIndex === slides.length) {
     currentIndex = 0;
   }
 
@@ -161,9 +162,9 @@ function changeSlide () {
       slide.style.display = 'flex';
       dots[idx].classList.add('active');
     } else {
- 
+
       slide.style.display = 'none';
-      dots[idx].classList.remove('active');  
+      dots[idx].classList.remove('active');
     }
   });
 
@@ -184,10 +185,9 @@ dots.forEach(dot => {
 
     slides.forEach(removeStyle);
     slides[id].style.display = 'flex';
-    
+
     dots.forEach(removeClass);
     dots[id].classList.add('active');
 
   });
 })
-
