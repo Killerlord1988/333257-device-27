@@ -3,32 +3,32 @@
 /* connect fonts */
 @font-face {
   font-family: Gilroy;
-  src: url('../fonts/gilroylight.woff2') format('woff2'),
-    url('../fonts/gilroylight.woff') format('woff');
+  src: url("../fonts/gilroylight.woff2") format("woff2"),
+    url("../fonts/gilroylight.woff") format("woff");
   font-weight: 300;
 }
 
 @font-face {
   font-family: Gilroy;
 
-  src: url('../fonts/gilroyextrabold.woff2') format('woff2'),
-    url('../fonts/gilroyextrabold.woff') format('woff');
+  src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
+    url("../fonts/gilroyextrabold.woff") format("woff");
   font-weight: 700;
 }
 
 @font-face {
   font-family: "Open Sans";
 
-  src: url('../fonts/opensans.woff2') format('woff2'),
-    url('../fonts/opensans.woff') format('woff');
+  src: url("../fonts/opensans.woff2") format("woff2"),
+    url("../fonts/opensans.woff") format("woff");
   font-weight: 400;
 }
 
 @font-face {
   font-family: "Open Sans";
 
-  src: url('../fonts/opensanslight.woff2') format('woff2'),
-    url('../fonts/opensanslight.woff') format('woff');
+  src: url("../fonts/opensanslight.woff2") format("woff2"),
+    url("../fonts/opensanslight.woff") format("woff");
   font-weight: 300;
 }
 
@@ -425,8 +425,6 @@ a {
   width: 560px;
 
   padding: 30px 20px 0 0;
-
-
 }
 
 .slider-number {
@@ -474,7 +472,7 @@ a {
 
 .slider-button {
   display: inline-block;
-
+vertical-align: middle;
   margin-bottom: 50px;
   padding: 10px 35px;
 }
@@ -569,6 +567,10 @@ a {
 .slider-control.active::before {
   position: absolute;
   content: "";
+
+  left: 50%;
+  top: 50%;
+
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -1066,14 +1068,6 @@ a {
   fill: #ffc600;
 }
 
-.logo-footer:hover {
-  opacity: 0.6;
-}
-
-.logo-footer:active {
-  opacity: 0.3;
-}
-
 .users-btn-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1545,8 +1539,8 @@ a {
 }
 
 .filter-background {
-  background: -webkit-gradient(linear, left top, right top, color-stop(31.2%, rgba(0, 0, 0, 0.08)), color-stop(31.2%, transparent));
   background: -o-linear-gradient(left, rgba(0, 0, 0, 0.08) 31.2%, transparent 31.2%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(31.2%, rgba(0, 0, 0, 0.08)), color-stop(31.2%, transparent));
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.08) 31.2%, transparent 31.2%);
 }
 
@@ -1654,6 +1648,15 @@ a {
   left: -10px;
 }
 
+.range input::-webkit-outer-spin-button,
+.range input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+.range input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+
 .range input::-webkit-input-placeholder {
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 14px;
@@ -1717,7 +1720,7 @@ a {
 .colors-list li,
 .bt-list li {
   position: relative;
-  padding-left: 40px;
+  padding-left: 22px;
 
 }
 
@@ -1766,7 +1769,12 @@ a {
 
 .colors-list input,
 .bt-list input {
-  display: none;
+  opacity: 0;
+}
+
+.colors-list input:focus ~ label,
+.bt-list input:focus ~ label {
+  outline: 1px dashed #000000;
 }
 
 .bt-list label:before,
