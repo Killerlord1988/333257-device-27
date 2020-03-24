@@ -555,9 +555,11 @@ vertical-align: middle;
 } */
 
 .slider-control {
+  padding: 0;
   position: relative;
   background-color: transparent;
   border: none;
+  width: 12px;
   height: 12px;
   outline: none;
   cursor: pointer;
