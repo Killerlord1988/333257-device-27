@@ -143,8 +143,6 @@ window.addEventListener("keydown", function (evt) {
 //   };
 // };
 
-
-
 const intervalId = setInterval(changeSlide, 2000);
 
 const slides = document.querySelectorAll(".slider-wrapper");
@@ -173,7 +171,7 @@ function changeSlide() {
 
 function removeStyle(el) {
   el.style.display = 'none';
-};
+}
 
 function removeClass(el) {
   el.classList.remove('active');
@@ -190,4 +188,4 @@ dots.forEach(dot => {
     dots[id].classList.add('active');
 
   });
-})
+});
